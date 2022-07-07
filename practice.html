@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="black">
+    <font color = "red">
+        <center><h1>Form with Database Connectivity</h1>
+        <form action="data.php" method="post">
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" placeholder="Enter your Email" required>
+            <br>
+            <label for="pwd">Password</label>
+            <br>
+            <input type="password" name="pwd" placeholder="Password" required>
+            <br>
+            <label for="choose" id="choice">Choose your Gender:</label>
+            <br>
+            <input type="radio" name="gender" value="Male">  Male
+            <br>
+            <input type="radio" name="gender" value="Female">  Female 
+            <br>
+            <input type="radio" name="gender" value="other" checked> Others 
+            <br>
+            <label for="msg">Write your message</label>
+            <br>
+            <textarea name="dscp" cols="30" rows="10" placeholder="Write your message"></textarea>
+            <br>
+            <label for="add">Address:</label>
+            <br>
+            <select name="add">
+                <option value="none" name="add">None</option>
+                <option value="AP" name="add">Andhra Pradesh</option>
+                <option value="MP" name="add">Madhya Pradesh</option>
+                <option value="UP" name="add">Uttar Pradesh</option>
+                <option value="HP" name="add">Himachal Pradesh</option>
+            </select>
+            <br>
+            <button>Submit</button>
+        </form>
+    </center>
+    </font>
+</body>
+</html>
